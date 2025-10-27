@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna - Строительная компания</title>
+  <meta name="description" content="Профессиональное строительство и ремонт домов. Качественные услуги по строительству, реновации и архитектурному дизайну.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="index.html">Krishna<span>.</span></a>
+				</div>
+        <div class="header__social">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+	        </div>
+				</div>
+      
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Открыть меню" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav__list" id="nav-list">
+          <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+          <li><a href="about.html" class="nav__link">О нас</a></li>
+          <li><a href="team.html" class="nav__link">Команда</a></li>
+          <li><a href="projects.html" class="nav__link">Проекты</a></li>
+          <li><a href="blog.html" class="nav__link">Блог</a></li>
+          <li><a href="contact.html" class="nav__link">Контакты</a></li>
+        </ul>
+        
+        <div class="nav__search">
+          <form class="search-form">
+            <input type="search" placeholder="Поиск..." class="search-form__input">
+            <button type="submit" class="search-form__button">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"/>
+              </svg>
+	      </button>
+        </form>
+	    </div>
+	  </nav>
+		            </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__slider" id="hero-slider">
+      <div class="hero__slide hero__slide--active" style="background-image: url('images/demolition-work-1.jpg')">
+	        <div class="container">
+          <div class="hero__content">
+            <h2 class="hero__subtitle">Профессиональный демонтаж</h2>
+            <h1 class="hero__title">Качественные работы</h1>
+		            </div>
+		          </div>
+		        </div>
+      <div class="hero__slide" style="background-image: url('images/demolition-work-2.jpg')">
+	        <div class="container">
+          <div class="hero__content">
+            <h2 class="hero__subtitle">Безопасный снос</h2>
+            <h1 class="hero__title">Опытная команда</h1>
+		            </div>
+		          </div>
+		        </div>
+      <div class="hero__slide" style="background-image: url('images/demolition-work-3.jpg')">
+    	<div class="container">
+          <div class="hero__content">
+            <h2 class="hero__subtitle">Быстро и надежно</h2>
+            <h1 class="hero__title">Демонтажные услуги</h1>
+	      		</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+   	
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <div class="services__main">
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Строительство</h3>
+        <p class="service-card__description">Профессиональное строительство домов и коммерческих объектов с использованием современных технологий.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Реновация домов</h3>
+        <p class="service-card__description">Комплексная реновация и модернизация жилых помещений с сохранением особенностей.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Покраска</h3>
+        <p class="service-card__description">Качественные малярные работы внутри и снаружи помещений с экологически чистыми материалами.</p>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+          </svg>
+        </div>
+        <h3 class="service-card__title">Архитектурный дизайн</h3>
+        <p class="service-card__description">Создание уникальных архитектурных решений и дизайн-проектов для объектов.</p>
+      </div>
+      </div>
+      
+      <div class="services__additional">
+      <div class="service-item">
+        <div class="service-item__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+        </div>
+        <div class="service-item__content">
+          <h3>Эксперты и профессионалы</h3>
+          <p>Наша команда состоит из опытных специалистов с многолетним стажем работы</p>
+        </div>
+      </div>
+      
+      <div class="service-item">
+        <div class="service-item__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <div class="service-item__content">
+          <h3>Высокое качество работ</h3>
+          <p>Гарантируем качество выполненных работ и используем только лучшие материалы</p>
+        </div>
+      </div>
+      
+      <div class="service-item">
+        <div class="service-item__icon">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM8.5 16L12 13.5 15.5 16 12 18.5 8.5 16z"/>
+          </svg>
+        </div>
+        <div class="service-item__content">
+          <h3>Поддержка 24/7</h3>
+          <p>Круглосуточная техническая поддержка и консультации по всем вопросам</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+      <div class="container">
+      <div class="about__content">
+        <div class="about__media">
+          <div class="about__video">
+            <video 
+              src="images/demolition-work-video.mp4" 
+              poster="images/demolition-work-1.jpg"
+              controls 
+              preload="metadata"
+              class="about__video-player">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+        </div>
+        
+        <div class="about__text">
+          <span class="about__subtitle">Добро пожаловать в Krishna</span>
+          <h2 class="about__title">Профессиональный демонтаж и снос</h2>
+          <p class="about__description">Наша компания специализируется на безопасном демонтаже зданий и сооружений. Мы используем современное оборудование и соблюдаем все требования безопасности для качественного выполнения демонтажных работ.</p>
+          
+          <div class="about__tabs">
+            <div class="tabs__nav">
+              <button class="tab__btn tab__btn--active" data-tab="mission">Наша миссия</button>
+              <button class="tab__btn" data-tab="vision">Наше видение</button>
+              <button class="tab__btn" data-tab="values">Наши ценности</button>
+		                  </div>
+            
+            <div class="tabs__content">
+              <div class="tab__panel tab__panel--active" id="mission">
+                <p>Наша миссия - создавать качественные и безопасные строительные решения, которые улучшают жизнь людей и способствуют развитию городской инфраструктуры.</p>
+              </div>
+              <div class="tab__panel" id="vision">
+                <p>Мы стремимся стать ведущей строительной компанией, известной своим профессионализмом, инновационными решениями и ответственным подходом к экологии.</p>
+              </div>
+              <div class="tab__panel" id="values">
+                <p>Качество, надежность, инновации и клиентоориентированность - основные ценности, которыми мы руководствуемся в своей работе каждый день.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="50">0</div>
+          <div class="stat-item__label">Лет опыта</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="8500">0</div>
+          <div class="stat-item__label">Завершенных проектов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="378">0</div>
+          <div class="stat-item__label">Профессиональных экспертов</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" data-count="1200">0</div>
+          <div class="stat-item__label">Единиц техники</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <div class="portfolio__grid">
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-1.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Снос старого здания</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-2.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Разборка конструкций</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-3.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Демонтаж перегородок</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-4.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Подготовка к реконструкции</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-5.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Очистка территории</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio__item">
+        <div class="portfolio__image" style="background-image: url('images/demolition-work-1.jpg')">
+          <div class="portfolio__overlay">
+            <div class="portfolio__content">
+              <span class="portfolio__category">Демонтаж</span>
+              <h3 class="portfolio__title">Безопасный снос</h3>
+            </div>
+            <button class="portfolio__zoom" aria-label="Увеличить изображение">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Отзывы</span>
+        <h2 class="section-title">Довольные клиенты</h2>
+      </div>
+      
+      <div class="testimonials__slider" id="testimonials-slider">
+        <div class="testimonial">
+          <div class="testimonial__icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z"/>
+            </svg>
+          </div>
+          <div class="testimonial__content">
+            <p class="testimonial__text">Отличная работа! Команда Krishna выполнила строительство нашего дома точно в срок и с высоким качеством. Рекомендуем всем!</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" style="background-image: url('images/person_1.jpg')"></div>
+              <div class="testimonial__info">
+                <h4 class="testimonial__name">Роман Смирнов</h4>
+                <span class="testimonial__position">Директор по маркетингу</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial__icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z"/>
+            </svg>
+          </div>
+          <div class="testimonial__content">
+            <p class="testimonial__text">Профессиональный подход и внимание к деталям. Реновация нашего офиса прошла без проблем, результат превзошел ожидания.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" style="background-image: url('images/person_2.jpg')"></div>
+              <div class="testimonial__info">
+                <h4 class="testimonial__name">Анна Петрова</h4>
+                <span class="testimonial__position">Управляющий директор</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial__icon">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z"/>
+            </svg>
+          </div>
+          <div class="testimonial__content">
+            <p class="testimonial__text">Спасибо за качественную работу! Архитектурный дизайн нашего дома получился именно таким, как мы мечтали.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar" style="background-image: url('images/person_3.jpg')"></div>
+              <div class="testimonial__info">
+                <h4 class="testimonial__name">Михаил Иванов</h4>
+                <span class="testimonial__position">Предприниматель</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Наш блог</span>
+        <h2 class="section-title">Последние новости</h2>
+      </div>
+      
+      <div class="blog__grid">
+        <article class="blog-card">
+          <div class="blog-card__image" style="background-image: url('images/demolition-work-1.jpg')"></div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">30 января 2024</span>
+              <span class="blog-card__author">Админ</span>
+              <span class="blog-card__comments">3 комментария</span>
+            </div>
+            <h3 class="blog-card__title">Безопасность при демонтажных работах</h3>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <div class="blog-card__image" style="background-image: url('images/demolition-work-2.jpg')"></div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">25 января 2024</span>
+              <span class="blog-card__author">Админ</span>
+              <span class="blog-card__comments">5 комментариев</span>
+            </div>
+            <h3 class="blog-card__title">Оборудование для демонтажа</h3>
+          </div>
+        </article>
+        
+        <article class="blog-card">
+          <div class="blog-card__image" style="background-image: url('images/demolition-work-3.jpg')"></div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">20 января 2024</span>
+              <span class="blog-card__author">Админ</span>
+              <span class="blog-card__comments">2 комментария</span>
+            </div>
+            <h3 class="blog-card__title">Утилизация строительных отходов</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__content">
+        <div class="newsletter__text">
+          <h2 class="newsletter__title">Подпишитесь на нашу рассылку</h2>
+        </div>
+        <div class="newsletter__form">
+          <form class="subscribe-form">
+            <input type="email" class="subscribe-form__input" placeholder="Введите ваш email" required>
+            <button type="submit" class="subscribe-form__button">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__main">
+          <div class="footer__about">
+            <h3 class="footer__title">О нас</h3>
+            <p class="footer__description">Krishna - надежная строительная компания с многолетним опытом работы в сфере строительства и реновации.</p>
+            <div class="footer__social">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer__links">
+            <div class="footer__column">
+              <h3 class="footer__title">Услуги</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Строительство</a></li>
+                <li><a href="#" class="footer__link">Реновация домов</a></li>
+                <li><a href="#" class="footer__link">Покраска</a></li>
+                <li><a href="#" class="footer__link">Архитектурный дизайн</a></li>
+		            </ul>
+							</div>
+            
+            <div class="footer__column">
+              <h3 class="footer__title">Компания</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Персонал</a></li>
+                <li><a href="#" class="footer__link">Команда</a></li>
+                <li><a href="#" class="footer__link">Карьера</a></li>
+                <li><a href="#" class="footer__link">Блог</a></li>
+						            </ul>
+											</div>
+            
+            <div class="footer__column">
+              <h3 class="footer__title">Ресурсы</h3>
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Безопасность</a></li>
+                <li><a href="#" class="footer__link">Глобальные проекты</a></li>
+                <li><a href="#" class="footer__link">Аналитика</a></li>
+                <li><a href="#" class="footer__link">Конфиденциальность</a></li>
+						            </ul>
+											</div>
+										</div>
+									</div>
+        
+        <div class="footer__contact">
+          <h3 class="footer__title">Запросить расчет</h3>
+          <form class="contact-form">
+              <div class="form-group">
+              <input type="text" class="form-input" placeholder="Ваше имя" required>
+              </div>
+              <div class="form-group">
+              <input type="email" class="form-input" placeholder="Ваш email" required>
+              </div>
+              <div class="form-group">
+              <input type="text" class="form-input" placeholder="Тема" required>
+              </div>
+              <div class="form-group">
+              <textarea class="form-textarea" placeholder="Сообщение" rows="3" required></textarea>
+              </div>
+            <button type="submit" class="form-submit">Отправить</button>
+            </form>
+					</div>
+				</div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2024 Krishna. Все права защищены.</p>
+      </div>
+			</div>
+		</footer>
+    
+  <script src="js/main.js"></script>
+  </body>
+</html>
