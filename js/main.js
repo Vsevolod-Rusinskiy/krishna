@@ -1,5 +1,6 @@
 // Krishna - Modern Construction Website JavaScript
 // Clean vanilla JavaScript without dependencies
+// test
 
 (function() {
   'use strict'
