@@ -959,6 +959,16 @@ ul, ol {
   margin: 0;
   z-index: 100;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header--hidden .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-8);
 }
 
 /* Portfolio Section */
