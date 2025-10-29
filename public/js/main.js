@@ -272,23 +272,9 @@
     images.forEach(img => imageObserver.observe(img))
   }
 
-  // Search Functionality
+  // Удалена функция поиска
   function initSearch() {
-    const searchForm = document.querySelector('.search-form')
-    const searchInput = document.querySelector('.search-form__input')
-    
-    if (searchForm && searchInput) {
-      searchForm.addEventListener('submit', function(e) {
-        e.preventDefault()
-        const query = searchInput.value.trim()
-        
-        if (query) {
-          // Here you would typically send the query to your search endpoint
-          showNotification(`Поиск по запросу: "${query}"`, 'info')
-          // For demo purposes, we'll just show a notification
-        }
-      })
-    }
+    // Функция поиска больше не используется
   }
 
   // Performance Optimization: Debounce Function
@@ -323,7 +309,6 @@
     initSmoothScrolling()
     initHeaderScroll()
     initLazyLoading()
-    initSearch()
     
     // Add resize listener
     window.addEventListener('resize', handleResize)
