@@ -228,18 +228,19 @@
     if (!header) return
 
     let lastScrollY = window.scrollY
+    const scrollThreshold = 100 // Уменьшил порог для более быстрого реагирования
 
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY
       
-      if (currentScrollY > 100) {
+      if (currentScrollY > 50) {
         header.classList.add('header--scrolled')
       } else {
         header.classList.remove('header--scrolled')
       }
       
-      // Hide header on scroll down, show on scroll up
-      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+      // Скрываем только верхний блок при прокрутке вниз
+      if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
         header.classList.add('header--hidden')
       } else {
         header.classList.remove('header--hidden')
