@@ -133,6 +133,8 @@ ul, ol {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  will-change: transform, background;
 }
 
 .header__top {
@@ -996,6 +998,11 @@ ul, ol {
 }
 
 /* Header Scroll Effects */
+.header {
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  will-change: transform, background;
+}
+
 .header--scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);

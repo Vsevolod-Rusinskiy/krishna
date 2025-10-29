@@ -229,9 +229,11 @@
 
     let lastScrollY = window.scrollY
     const scrollThreshold = 100 // Уменьшил порог для более быстрого реагирования
+    let isHidden = false
 
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY
+      const scrollDelta = currentScrollY - lastScrollY
       
       if (currentScrollY > 50) {
         header.classList.add('header--scrolled')
@@ -239,15 +241,17 @@
         header.classList.remove('header--scrolled')
       }
       
-      // Скрываем только верхний блок при прокрутке вниз
-      if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
+      // Улучшенная логика скрытия/показа
+      if (scrollDelta > 10 && currentScrollY > scrollThreshold && !isHidden) {
         header.classList.add('header--hidden')
-      } else {
+        isHidden = true
+      } else if (scrollDelta < -10 && isHidden) {
         header.classList.remove('header--hidden')
+        isHidden = false
       }
       
       lastScrollY = currentScrollY
-    })
+    }, { passive: true }) // Улучшаем производительность
   }
 
   // Lazy Loading for Images
