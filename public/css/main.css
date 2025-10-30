@@ -1220,58 +1220,6 @@ ul, ol {
   color: var(--primary-color);
 }
 
-/* Newsletter Section */
-.newsletter {
-  padding: var(--space-16) 0;
-  background: var(--primary-color);
-  color: white;
-}
-
-.newsletter__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-8);
-}
-
-.newsletter__title {
-  font-size: var(--font-size-2xl);
-  font-weight: 600;
-  margin: 0;
-}
-
-.subscribe-form {
-  display: flex;
-  gap: var(--space-3);
-  min-width: 400px;
-}
-
-.subscribe-form__input {
-  flex: 1;
-  padding: var(--space-4);
-  border: none;
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-base);
-  outline: none;
-}
-
-.subscribe-form__button {
-  padding: var(--space-4) var(--space-6);
-  background: var(--secondary-color);
-  color: white;
-  border: none;
-  border-radius: var(--border-radius);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  white-space: nowrap;
-}
-
-.subscribe-form__button:hover {
-  background: #d97706;
-  transform: translateY(-1px);
-}
-
 /* Page Header */
 .page-header {
   padding: var(--space-20) 0 var(--space-16);
@@ -1699,4 +1647,18 @@ body:not(.loaded)::before {
   .subscribe-form {
     flex-direction: column;
   }
+}
+
+/* Удалены стили для блока подписки */
+.newsletter {
+  display: none;
+}
+
+.newsletter__content,
+.newsletter__text,
+.newsletter__title,
+.subscribe-form,
+.subscribe-form__input,
+.subscribe-form__button {
+  display: none;
 }
